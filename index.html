@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #b93131;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 10px;
+    }
+
+    .topnav a:hover {
+        background-color: #b93131;
+        color: black;
+        border-radius: 72px;
+        background: linear-gradient(145deg, #a72c2c, #c63434);
+        box-shadow: 30px 30px 60px #551717,
+            -30px -30px 60px #ff4b4b;
+
+    }
+
+    .topnav a:active {
+        transform: translateY(3px);
+        cursor: pointer;
+        border-radius: 100px;
+        background: #b93131;
+        box-shadow: inset 10px 10px 20px #9d2a2a,
+            inset -10px -10px 20px #d53838;
+
+
+    }
+
+
+    .grid-container01 {
+        display: grid;
+        grid-template-columns: 325px 325px 325px 325px;
+        gap: 5px;
+        background-color: #eb5468;
+        padding: 10 10px;
+        
+    }
+
+    .grid-container01>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    .grid-item01 {
+        grid-column: 1/3;
+        grid-row: 1/3
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .grid-container01 {
+            grid-template-columns: auto;
+        }
+        
+    }
+
+    @media screen and (max-width: 950px) {
+        .grid-container01 {
+            grid-template-columns: auto auto;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <div class="topnav">
+        <a href="#">DALE CLICK QUE SE MUEVE</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+
+    </div>
+    <div class="grid-container01">
+        <div class="grid-item01"><img src="imagen-1.jpg"></div>
+        <div class="grid-item02"><img src="imagen-2.jpg"></div>
+        <div class="grid-item03"><img src="imagen-3.jpg"></div>
+        <div class="grid-item04"><img src="imagen-4.jpg"></div>
+        <div class="grid-item05"><img src="imagen-5.jpg"></div>
+        <div class="grid-item06"><img src="imagen-6.jpg"></div>
+        <div class="grid-item07"><img src="imagen-7.jpg"></div>
+        <div class="grid-item08"><img src="imagen-8.jpg"></div>
+        <div class="grid-item09"><img src="imagen-9.jpeg"></div>
+    </div>
+
+
+
+</body>
+
+</html>
